@@ -1,0 +1,140 @@
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        color: #410f0f;
+
+    }
+
+    h1,
+    h2 {
+        color: #000000;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: lightgoldenrodyellow;
+        display: inline-flexbox;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 30vw;
+        height: 100%;
+        border-style: double;
+        border-width: 5px;
+        min-width: 290px;
+
+    }
+
+    #navbar ul {
+        height: 88%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #navbar header {
+        text-align: center;
+    }
+
+    #nav-list {
+        list-style: none;
+        padding-left: 0%;
+        overflow-y: auto;
+        line-height: 20px;
+        height: 88%;
+        text-decoration: none;
+    }
+
+    #navbar a{
+          text-decoration: none;
+          color:rgb(99, 94, 94);
+    }
+
+    #navbar li {
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(180, 17, 17);
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+    }
+
+    #nav-list li:hover {
+        animation-name: nav-list-item-color;
+        animation-duration: 90ms;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes nav-list-item-color {
+        100% {
+            background-color: ghostwhite;
+            border-width: 2px;
+            border-color: hsl(200, 70%, 30%);
+        }
+
+    }
+
+    .nav-link {
+        text-decoration: inherit;
+        color: inherit;
+    }
+
+    main {
+        margin-left: 32vw;
+        margin-right: 1vw;
+
+    }
+
+    main ul {
+        list-style-type: disc;
+    }
+
+    main iist {
+        margin-top: 5px;
+    }
+
+    .main-section {
+        text-align: justify;
+    }
+
+    code {
+        background-color: lavender;
+        display: block;
+        line-height: 2;
+        word-wrap: normal;
+        border-radius: 5px;
+        padding: 5px;
+        padding-left: 10px;
+    }
+
+    @media(max-width: 810px) {
+        #navbar {
+            position: relative;
+            width: 100%;
+            border-style: none;
+            height: auto;
+        }
+
+        #nav-list {
+            max-height: 35vh;
+            width: 100%;
+        }
+
+        main {
+            margin: auto;
+            margin-left: 1vw;
+            margin-right: 1vw;
+        }
+    }
+
+    @media(max-width: 500px) {
+        body {
+            font-size: 90%;
+        }
+    }
+
+    @media(max-width: 400px) {
+        body {
+            font-size: 80%;
+        }
+    }
